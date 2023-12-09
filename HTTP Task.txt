@@ -1,0 +1,28 @@
+HTTP (Hypertext Transfer Protocol) is a protocol used for transmitting hypertext over the internet. It is the foundation of any data exchange on the Web and is used for communication between a client (e.g., a web browser) and a server that hosts resources (e.g., web pages).
+
+Here's an overview of HTTP, HTTP/1.1, and HTTP/2:
+
+1. HTTP (Hypertext Transfer Protocol):
+   - Version: The original version, HTTP/0.9, was developed by Tim Berners-Lee in 1991. The subsequent version, HTTP/1.0, was standardized in 1996.
+   - Communication Model: HTTP is a stateless protocol, meaning each request from a client to a server is independent, and the server does not retain information about the previous requests.
+
+2. HTTP/1.1:
+   - Version: Introduced in 1997 as an update to HTTP/1.0.
+   - Improvements:
+      - Persistent Connections: Unlike HTTP/1.0, HTTP/1.1 supports persistent connections, allowing multiple requests and responses to be sent over a single connection.
+      - Host Header: Introduced the Host header, allowing multiple websites to be hosted on a single IP address.
+      - Chunked Transfer Encoding: Enabled the transfer of data in chunks, improving the efficiency of transferring large files.
+   - Limitations:
+      - Head-of-Line Blocking: Requests must be processed in the order they are received, leading to potential delays if one request is slow.
+
+3. HTTP/2:
+   - Version: Introduced in 2015 as the successor to HTTP/1.1.
+   - Improvements:
+      - Multiplexing: Allows multiple requests and responses to be sent in parallel over a single connection, addressing head-of-line blocking issues.
+      - Header Compression: Reduces overhead by compressing headers, improving efficiency.
+      - Binary Protocol: Uses a binary format for data transfer, which is more efficient than the text-based format of HTTP/1.1.
+      - Server Push: Allows servers to push resources to the client before they are requested, reducing latency.
+      - Prioritization: Supports prioritization of requests, improving the loading of critical resources.
+   - Backward Compatibility: Designed to be backward compatible with HTTP/1.1.
+
+HTTP/2 is designed to enhance performance, reduce latency, and improve the efficiency of web communication compared to HTTP/1.1, especially in the context of modern web applications with numerous resources.
