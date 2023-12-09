@@ -1,0 +1,35 @@
+
+Objects in JavaScript:
+
+In JavaScript, objects are like containers that hold information. They can store different kinds of data and even actions (functions). For example:
+
+```javascript
+let person = {
+  name: "John Doe",
+  age: 30,
+  isStudent: false,
+  greet: function() {
+    console.log("Hello!");
+  }
+};
+```
+
+Here, `person` is an object with properties like `name`, `age`, and a function called `greet`.
+
+ Internal Representation:
+
+ 1. Properties and Methods:
+   - Think of properties as the characteristics of an object (like name, age).
+   - Methods are actions the object can perform (like greet).
+
+ 2. Property Descriptors:
+   - Every property has additional information, like whether it can be changed, shown in a list, or deleted.
+
+ 3. Prototypes and Inheritance:
+   - Objects can share features with other objects through something called a prototype. It's like inheriting traits from your parents.
+
+ 4. Hidden Classes:
+   - When JavaScript organizes objects, it tries to put similar ones together for faster access. This organization is done in the background and is kind of like putting things in labeled boxes.
+
+ 5. Garbage Collection:
+   - JavaScript keeps track of objects. If an object is no longer needed, JavaScript cleans it up to save memory. Sometimes, circular connections between objects can make this a bit tricky.
